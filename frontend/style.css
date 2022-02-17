@@ -1,0 +1,41 @@
+body{
+    background-color: #F7FBFC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+body section header{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 100%;
+    background-color: #F1B99B;
+    color: #ffffff;
+}
+
+body section div.dayCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#root section .dayCard{
+    flex-grow: 1;
+    flex-basis: 14%; /*kinyújta streccseli*/
+    height: 100px;
+
+    /* margin: 10px; */
+    border: solid 4px #98C865;
+    padding: 15px;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+    color: #8CAA60;
+}

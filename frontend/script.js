@@ -31,24 +31,31 @@ function loadEvent(){
         "length" : "31"}
     ];
 
-    let isLeapYear = function(yr) {return !((yr % 4) || (!(yr % 100) && (yr % 400)));};
-    if(isLeapYear(thisYear)){
-        months[1].length = 29;
-    }
+    // let isLeapYear = function(yr) {return !((yr % 4) || (!(yr % 100) && (yr % 400)));};
+    // if(isLeapYear(thisYear)){
+    //     months[1].length = 29; //április rakja be vmiért
+    // }
 
-    let sections =""
+    let sections ="";
     for (let i = 0; i < 12; i++){
         let month = months[i];
-        let monthInside = `<h3>${month.name}</h3>`;
-        
+        let monthInside = `<header class="monthHeader">`;
+        monthInside += `<h3 id="title">${month.name}</h3>`;
+        monthInside += `<div>${thisYear}</div>`;
+        monthInside += `</header>`
+        let monthText = formatNumber(i);
+
+        monthInside += `<div class="dayCards">`
         for (let day = 0; day < month.length; day++) {
+            let dayText = formatNumber(day);
             monthInside += `
-            <div class="card">
-                <time datetime="${thisYear}">${thisYear}</time>
-                <time datetime="${i+1}">${i + 1}</time>
-                <time datetime="${day}">${day}</time>
+            <div class="dayCard">
+            <time datetime="${thisYear}">${thisYear}</time>
+            <time datetime="${monthText}">${monthText}</time>
+            <time datetime="${dayText}">${dayText}</time>
             </div>`;
         }
+        monthInside += `</div>`
 
         rootElement.insertAdjacentHTML("beforeend", `<section id="${month.name}">${monthInside}</section>`);
     }
@@ -68,3 +75,11 @@ function loadEvent(){
 }
 
 window.addEventListener("load", loadEvent);
+
+function formatNumber(number) {
+    let numberText = `${number + 1}`;
+    if (number < 9) {
+        numberText = "0" + numberText;
+    }
+    return numberText;
+}
