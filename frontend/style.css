@@ -21,15 +21,25 @@ body section header{
 }
 
 body section div.dayCards{
+    position: absolute;
+    top: 110px;
+    left: 0;
     display: flex;
     flex-wrap: wrap;
+    /* flex-direction: row; */
     gap: 10px;
 }
 
 #root section .dayCard{
-    flex-grow: 1;
-    flex-basis: 14%; /*kinyújta streccseli*/
+    flex-basis: calc(100% / 7 - 10px);
+    aspect-ratio: 1/2;
     height: 100px;
+
+    float: left;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     /* margin: 10px; */
     border: solid 4px #98C865;
