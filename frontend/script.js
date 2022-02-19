@@ -40,7 +40,7 @@ function loadEvent(){
     for (let i = 0; i < 12; i++){
         let month = months[i];
         let monthInside = `<header class="monthHeader">`;
-        monthInside += `<h3 id="title">${month.name}</h3>`;
+        monthInside += `<h1 id="title">${month.name}</h1>`;
         monthInside += `<div>${thisYear}</div>`;
         monthInside += `</header>`
         let monthText = formatNumber(i);

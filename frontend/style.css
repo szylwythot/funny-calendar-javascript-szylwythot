@@ -8,6 +8,7 @@ body section{
     position: relative;
     height: 100vh;
     width: 100%;
+    background-color: #FBFBFB;
 }
 
 body section header{
@@ -18,34 +19,87 @@ body section header{
     width: 100%;
     background-color: #F1B99B;
     color: #ffffff;
+    font-weight: 700;
+}
+
+body section header h1{
+    position: absolute;
+    top: calc(50%);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+}
+
+body section:nth-child(4n+2) header{
+    background-color:  #F1D195;
+}
+
+body section:nth-child(4n+3) header{
+    background-color: #C86D74;
+}
+
+body section:nth-child(4n) header{
+    background-color: #EED352;
 }
 
 body section div.dayCards{
     position: absolute;
     top: 110px;
     left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: row; */
-    gap: 10px;
+    /* display: flex; */
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    /* gap: 10px; */
 }
 
 #root section .dayCard{
-    flex-basis: calc(100% / 7 - 10px);
-    aspect-ratio: 1/2;
-    height: 100px;
+    /* flex-basis: calc(100% / 7 - 10px);
+    aspect-ratio: 1/2; */
+    height: 150px;
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-content:center;
 
     float: left;
-    padding: 1em;
-    display: flex;
     align-items: center;
     justify-content: center;
 
-    /* margin: 10px; */
+    margin: 5px;
     border: solid 4px #98C865;
-    padding: 15px;
+    /* padding: 15px; */
     border-radius: 10px;
 
-    background-color: #ffffff;
-    color: #8CAA60;
+    background-color: #8CAA60;
+    color: #ffffff;
+}
+
+.dayCard time{
+    flex-grow: 1;
+    flex-basis: 16%;
+    
+    width: 100%;
+
+    /* background: #8CAA60; */
+    color: #ffffff;
+    text-align: center;
+    
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dayCard time:nth-child(3){
+    flex-grow: 1;
+    flex-basis: 66%;
+
+    line-height: 0;
+    padding-top: 50%;
+    border-radius: 0 0 7px 7px;
+
+    justify-content: center;
+
+    background: #ffffff;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 400;
 }
