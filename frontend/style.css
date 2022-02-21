@@ -52,7 +52,7 @@ body section header{
 #root section div.dayCards{
     position: absolute;
     top: 110px;
-    left: 0;
+    left: 10px;
     /* display: flex; */
     /* flex-wrap: wrap;
     flex-direction: row; */
@@ -68,10 +68,10 @@ body section header{
     display: flex;
     flex-direction: column;
     align-content:center;
-
-    float: left;
     align-items: center;
     justify-content: center;
+
+    float: left;
 
     margin: 5px;
     border: none;
@@ -118,23 +118,23 @@ body section header{
     font-size: 40px;
     font-weight: 200;
 }
-/* 
+
 #root section:nth-child(1) .dayCards{
     display: flex;
     flex-wrap: wrap;
-
+    gap: 10px;
 }
 
 #root section:nth-child(1) .dayCards .dayCard{
     flex-basis: calc(14% - 5px);
-
     margin: 0;
     
 }
 
-#root section:nth-child(1) .dayCards.dayCard time:nth-child(3){
+#root section:nth-child(1) .dayCards .dayCard time:nth-child(3){
     flex-grow: 1;
     flex-basis: 66%;
 
-    line-height: 0;
-} */
+    line-height: normal;
+    padding-top: 0;
+}
