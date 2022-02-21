@@ -22,26 +22,34 @@ body section header{
     font-weight: 700;
 }
 
-body section header h1{
+#root section header h1{
     position: absolute;
     top: calc(50%);
     left: calc(50%);
     transform: translate(-50%, -50%);
+    font-size: 38px;
 }
 
-body section:nth-child(4n+2) header{
+#root section header div{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 15px;
+}
+
+/* #root section:nth-child(4n+2) header{
     background-color:  #F1D195;
 }
 
-body section:nth-child(4n+3) header{
+#root section:nth-child(4n+3) header{
     background-color: #C86D74;
 }
 
-body section:nth-child(4n) header{
+#root section:nth-child(4n) header{
     background-color: #EED352;
-}
+} */
 
-body section div.dayCards{
+#root section div.dayCards{
     position: absolute;
     top: 110px;
     left: 0;
@@ -66,12 +74,20 @@ body section div.dayCards{
     justify-content: center;
 
     margin: 5px;
-    border: solid 4px #98C865;
-    /* padding: 15px; */
-    border-radius: 10px;
+    border: none;
+    border-radius: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 5px;
 
     background-color: #8CAA60;
     color: #ffffff;
+}
+
+#root section .dayCard:nth-child(7n){
+    background-color: #98C865;
+}
+
+#root section .dayCard:nth-child(7n -1){
+    background-color: #98C865;
 }
 
 .dayCard time{
@@ -85,7 +101,7 @@ body section div.dayCards{
     text-align: center;
     
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .dayCard time:nth-child(3){
@@ -94,12 +110,31 @@ body section div.dayCards{
 
     line-height: 0;
     padding-top: 50%;
-    border-radius: 0 0 7px 7px;
 
     justify-content: center;
 
     background: #ffffff;
     color: #000000;
     font-size: 40px;
-    font-weight: 400;
+    font-weight: 200;
 }
+/* 
+#root section:nth-child(1) .dayCards{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#root section:nth-child(1) .dayCards .dayCard{
+    flex-basis: calc(14% - 5px);
+
+    margin: 0;
+    
+}
+
+#root section:nth-child(1) .dayCards.dayCard time:nth-child(3){
+    flex-grow: 1;
+    flex-basis: 66%;
+
+    line-height: 0;
+} */
