@@ -53,15 +53,10 @@ body section header{
     position: absolute;
     top: 110px;
     left: 10px;
-    /* display: flex; */
-    /* flex-wrap: wrap;
-    flex-direction: row; */
-    /* gap: 10px; */
+    width: calc(100% - 20px);
 }
 
 #root section .dayCard{
-    /* flex-basis: calc(100% / 7 - 10px);
-    aspect-ratio: 1/2; */
     height: 150px;
     width: 100px;
 
@@ -73,7 +68,6 @@ body section header{
 
     float: left;
 
-    margin: 5px;
     border: none;
     border-radius: 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 5px;
@@ -96,7 +90,6 @@ body section header{
     
     width: 100%;
 
-    /* background: #8CAA60; */
     color: #ffffff;
     text-align: center;
     
@@ -119,22 +112,50 @@ body section header{
     font-weight: 200;
 }
 
+/* Region: First: january 7 in a row */
 #root section:nth-child(1) .dayCards{
+    /* top: 100px;
+    left:0; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+}
+
+#root section:nth-child(1) .dayCards .dayCard{
+    flex-basis: calc(14% - 5px);
+}
+
+#root section:nth-child(1) .dayCards .dayCard time:nth-child(3){
+    /* delete earlier positioning */
+    line-height: 0;
+    padding-top: 25%;
+}
+/* Endregion: First: january 7 in a row */
+
+
+/* Region: Second: february 7 in a row */
+#root section:nth-child(2) .dayCards{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-#root section:nth-child(1) .dayCards .dayCard{
+#root section:nth-child(2) .dayCards .dayCard{
     flex-basis: calc(14% - 5px);
-    margin: 0;
     
 }
 
-#root section:nth-child(1) .dayCards .dayCard time:nth-child(3){
+#root section:nth-child(2) .dayCards .dayCard time:nth-child(3){
     flex-grow: 1;
     flex-basis: 66%;
 
     line-height: normal;
     padding-top: 0;
+}
+
+/* Endregion: Second: february 7 in a row */
+
+#root section:nth-child(12) .dayCard{
+    margin: 5px;
 }
