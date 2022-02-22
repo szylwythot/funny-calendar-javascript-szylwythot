@@ -159,22 +159,28 @@ body section header{
 
 /* Endregion: Second: february 7 in a row */
 
-/* Region: Third: march 4 in a column */
+/* Region: Third: march 7 in a column */
 #root section:nth-child(3) .dayCards{
-    height: 100% - 100px;
+    height: calc(100vh - 100px);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-around;
+    gap: 5px;
 }
 
 #root section:nth-child(3) .dayCards .dayCard{
-    flex: 1 1 calc(20% - 5px);
+    flex: 0 1 calc(14% - 5px);
+    font-size: 10px;
+    width: 20%;
+    align-self: flex-start;
+    /* max-width: 50px; */
 }
 
 #root section:nth-child(3) .dayCards .dayCard time:nth-child(3){
     flex-grow: 1;
     flex-basis: 66%;
+    font-size: 15px;
 
     line-height: normal;
     padding-top: 0;
