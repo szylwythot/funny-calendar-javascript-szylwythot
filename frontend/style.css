@@ -166,7 +166,6 @@ body section header{
     line-height: normal;
     padding-top: 0;
 }
-
 /* Endregion: Second: february 7 in a row */
 
 /* Region: Third: march 7 in a column */
@@ -198,26 +197,89 @@ body section header{
 
 /* Endregion: Third: march 4 in a column */
 
-
-
-/* Region: 5.: may 7 in a row with 3 in the middle at the end*/
-#root section:nth-child(5) .dayCards{
-    /* top: 100px;
-    left:0; */
+/* Region: 4: april 7 in a row */
+#root section:nth-child(4) .monthHeader{
+    height: 60;
+}
+#root section:nth-child(4) .dayCards{
+    /* width: 800px; */
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px 5px;
+    gap: 10px;
+}
+
+#root section:nth-child(4) .dayCards .dayCard{
+    height: calc((100vh - 60px) * 0.15);
+    /* width: 75px; */
+    flex-basis: calc(13%);
+    flex-grow: 0;
+    /* flex-shrink: 1; */
+}
+
+#root section:nth-child(4) .dayCards .dayCard:nth-child(7n){
+    flex-grow: 1;
+    /* height: 120px; */
+    /* flex-shrink: 2; */
+}
+
+#root section:nth-child(4) .dayCards .dayCard:nth-child(7n-1){
+    flex-grow: 1;
+    /* height: 120px; */
+    /* flex-shrink: 2; */
+}
+
+#root section:nth-child(4) .dayCards .dayCard time:nth-child(3){
+    flex-grow: 1;
+    flex-basis: 66%;
+    font-size: 150%;
+    /* line-height: 0;
+    padding-bottom: 10px; */
+
+    line-height: normal;
+    padding-top: 0;
+}
+/* Endregion: 4: april 7 in a row weekends are bigger*/
+
+/* Region: 5.: may 7 in a row weekdays are bigger*/
+#root section:nth-child(5) .monthHeader{
+    height: 60;
+}
+#root section:nth-child(5) .dayCards{
+    /* width: 800px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 #root section:nth-child(5) .dayCards .dayCard{
-    flex-basis: calc(14% - 5px);
+    height: calc((100vh - 60px) * 0.15);
+    /* width: 75px; */
+    flex-basis: calc(13%);
+    flex-grow: 1;
+    /* flex-shrink: 1; */
+}
+
+#root section:nth-child(5) .dayCards .dayCard:nth-child(7n){
+    flex-grow: 0;
+    /* height: 120px; */
+    /* flex-shrink: 2; */
+}
+
+#root section:nth-child(5) .dayCards .dayCard:nth-child(7n-1){
+    flex-grow: 0;
+    /* height: 120px; */
+    /* flex-shrink: 2; */
 }
 
 #root section:nth-child(5) .dayCards .dayCard time:nth-child(3){
-    /* delete earlier positioning */
-    line-height: 0;
-    padding-top: 25%;
+    flex-grow: 1;
+    flex-basis: 66%;
+    font-size: 150%;
+    /* line-height: 0;
+    padding-bottom: 10px; */
+
+    line-height: normal;
+    padding-top: 0;
 }
 /* Endregion: 5.: may 7 in a row with 3 in the middle at the end*/
 
