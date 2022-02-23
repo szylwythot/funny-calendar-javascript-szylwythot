@@ -1,4 +1,5 @@
 body{
+    width: 100vw;
     background-color: #F7FBFC;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -7,7 +8,7 @@ body{
 body section{
     position: relative;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-color: #FBFBFB;
 }
 
@@ -15,7 +16,7 @@ body section header{
     position: absolute;
     top:0;
     left:0;
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color: #F1B99B;
     color: #ffffff;
@@ -51,14 +52,17 @@ body section header{
 
 #root section div.dayCards{
     position: absolute;
-    top: 110px;
-    left: 10px;
-    width: calc(100% - 20px);
+    top: 85px;
+    left: 5px;
+    width: calc(100% - 10px);
+    gap: 5px;
 }
 
 #root section .dayCard{
     height: 150px;
     width: 100px;
+    /* height: 135px;
+    width: 90px; */
     /* height: 108px;
     width: 72px; */
     /* try daycards width 584 px  */
@@ -117,22 +121,26 @@ body section header{
 
 /* Region: First: january 7 in a row */
 #root section:nth-child(1) .dayCards{
-    /* top: 100px;
+    /* top: 80px;
     left:0; */
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 15px 8px;
+    justify-content: space-around;
+    gap: 4px 10px;
 }
 
 #root section:nth-child(1) .dayCards .dayCard{
+    height: 90px;
+    width: 60px;
     flex-basis: calc(14% - 5px);
+    flex-grow: 1;
 }
 
 #root section:nth-child(1) .dayCards .dayCard time:nth-child(3){
     /* delete earlier positioning */
     line-height: 0;
-    padding-top: 25%;
+    padding-top: 25px;
+    font-size: 25px;
 }
 /* Endregion: First: january 7 in a row */
 
@@ -145,6 +153,8 @@ body section header{
 }
 
 #root section:nth-child(2) .dayCards .dayCard{
+    height: 135px;
+    width: 90px;
     flex-basis: calc(14% - 5px);
     
 }
@@ -161,7 +171,7 @@ body section header{
 
 /* Region: Third: march 7 in a column */
 #root section:nth-child(3) .dayCards{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -188,6 +198,8 @@ body section header{
 
 /* Endregion: Third: march 4 in a column */
 
+
+
 /* Region: 5.: may 7 in a row with 3 in the middle at the end*/
 #root section:nth-child(5) .dayCards{
     /* top: 100px;
@@ -195,7 +207,7 @@ body section header{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 15px 8px;
+    gap: 10px 5px;
 }
 
 #root section:nth-child(5) .dayCards .dayCard{
