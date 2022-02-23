@@ -238,6 +238,7 @@ body section header{
     line-height: normal;
     padding-top: 0;
 }
+
 /* Endregion: 4: april 7 in a row weekends are bigger*/
 
 /* Region: 5.: may 7 in a row weekdays are bigger*/
@@ -249,6 +250,7 @@ body section header{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    align-items: left;
 }
 
 #root section:nth-child(5) .dayCards .dayCard{
@@ -282,6 +284,55 @@ body section header{
     padding-top: 0;
 }
 /* Endregion: 5.: may 7 in a row with 3 in the middle at the end*/
+
+/* Region: 6: jun 7 in a row */
+#root section:nth-child(6) .monthHeader{
+    height: 60px;
+}
+#root section:nth-child(6) .dayCards{
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#root section:nth-child(6) .dayCards .dayCard{
+    height: 90px;
+    /* width: 75px; */
+    flex-basis: 80px;
+    flex-grow: 0;
+    /* flex-shrink: 1; */
+}
+
+#root section:nth-child(6) .dayCards .dayCard:nth-child(7n){
+    flex-basis: 180px;
+    /* flex-basis: 370px; */
+    flex-grow: 1;
+    /* height: 120px; */
+    /* flex-shrink: 2; */
+}
+
+#root section:nth-child(6) .dayCards .dayCard:nth-child(7n-1){
+    /* flex-basis: 200px; */
+    /* flex-grow: 1; */
+    /* height: 120px; */
+    /* flex-shrink: 2; */
+}
+
+#root section:nth-child(6) .dayCards .dayCard time:nth-child(3){
+    flex-grow: 1;
+    flex-basis: 66%;
+    font-size: 150%;
+    /* line-height: 0;
+    padding-bottom: 10px; */
+
+    line-height: normal;
+    padding-top: 0;
+}
+/* Endregion: 4: jun 7 in a row weekends are bigger*/
 
 #root section:nth-child(12) .dayCard{
     margin: 5px;
