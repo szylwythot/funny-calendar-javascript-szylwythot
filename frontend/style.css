@@ -398,3 +398,12 @@ body section header{
 #root section:nth-child(12) .dayCard{
     margin: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: #8CAA60;
+    }
+    section .dayCards{
+        background-color: #8CAA60;
+    }
+  }
