@@ -31,11 +31,6 @@ function loadEvent(){
         "length" : "31"}
     ];
 
-    // let isLeapYear = function(yr) {return !((yr % 4) || (!(yr % 100) && (yr % 400)));};
-    // if(isLeapYear(thisYear)){
-    //     months[1].length = 29; //április rakja be vmiért
-    // }
-
     let sections ="";
     for (let i = 0; i < 12; i++){
         let month = months[i];
@@ -50,31 +45,29 @@ function loadEvent(){
             let dayText = formatNumber(day);
             monthInside += `
             <div class="dayCard">
-            <time datetime="${thisYear}">${thisYear}</time>
-            <time datetime="${monthText}">${monthText}</time>
-            <time datetime="${dayText}">${dayText}</time>
+                <time datetime="${thisYear}">${thisYear}</time>
+                <time datetime="${monthText}">${monthText}</time>
+                <time datetime="${dayText}">${dayText}</time>
             </div>`;
         }
         monthInside += `</div>`
 
-        rootElement.insertAdjacentHTML("beforeend", `<section id="${month.name}">${monthInside}</section>`);
+        rootElement.insertAdjacentHTML("beforeend", `<section id="${month.name}" class="monthSection">${monthInside}</section>`);
     }
 
+    const dayCards = document.querySelectorAll(`.dayCard`);
 
+    for (const dayCard of dayCards) {
+        dayCard.addEventListener('click', event => {
+            dayCard.classList.toggle("clicked");
+        });
+    }
 
-    // let headerInside = ``;
-    // headerInside += `<a href="#main" class="logo-container"><img class="logo" src="logo_small.png" alt="logo"/></a>`;
-    // for (const sectionElement of listOfSectionElements) {
-    //     if(sectionElement.getAttribute("data-visible") === "1"){
-    //         headerInside += `<a href="#${ sectionElement.id }"> ${ sectionElement.getAttribute("data-title") } </a>`;
-    //     }
-    // }
-    // headerInside += `<button class="book-button">book</button>`;
-    // console.log(headerInside);
-    // rootElement.insertAdjacentHTML("afterbegin", `<header>${headerInside}</header>`);
 }
 
 window.addEventListener("load", loadEvent);
+
+
 
 function formatNumber(number) {
     let numberText = `${number + 1}`;

@@ -399,6 +399,27 @@ body section header{
     margin: 5px;
 }
 
+#root section .dayCard.clicked{
+    animation: 1.2s ease-in-out flipCard;
+}
+
+@keyframes flipCard {
+  0% {
+    transform: rotate(180deg);
+    background-color: #F1B99B;
+    opacity: 30%;
+  }
+  90%{
+      background-color: #F1B99B;
+      opacity: 95%;
+  }
+  100% {
+    transform: rotate(0deg);
+    background-color: #98C865;
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 600px) {
     body {
       background-color: #8CAA60;
@@ -407,3 +428,4 @@ body section header{
         background-color: #8CAA60;
     }
   }
+
