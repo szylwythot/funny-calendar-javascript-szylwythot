@@ -553,12 +553,247 @@ body section header{
   }
 }
 
+/* general query */
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: #8CAA60;
+    body section header{
+        position: absolute;
+        top:0;
+        left:0;
+        height: 60px;
+        width: 100%;
+        background-color: #F1B99B;
+        color: #ffffff;
+        font-weight: 700;
+        /* justify-content: center; */
     }
-    section .dayCards{
-        background-color: #8CAA60;
+    
+    #root section header h1{
+        position: absolute;
+        top: calc(50%);
+        left: calc(50%);
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+    }
+    
+    #root section header div{
+        position: absolute;
+        top: 8px;
+        left: 10px;
+        font-size: 10px;
+    }
+
+    #root section .dayCards{
+        display: flex;
+        top: 65px;
+    }
+}
+/* january query */
+@media only screen and (max-width: 600px) {
+    body section:nth-child(1){
+        position: relative;
+        height: 100vh;
+        width: 300px;
+        background-color: #FBFBFB;
+    } 
+
+    #root section:nth-child(1) .dayCards{
+        left: 3px;
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3px;
+    }
+
+    #root section:nth-child(1) .dayCards .dayCard{
+        height: auto;
+        width: 50px;
+        flex-basis: calc(14% - 3px);
+        /* flex-shrink: 1; */
+    }
+
+    #root section:nth-child(1) .dayCards .dayCard time{
+        font-size: 10px;
+    }
+
+    #root section:nth-child(1) .dayCards .dayCard time:nth-child(3){
+        font-size: 10px;
+        line-height: 0;
+        padding: 10px;
     }
   }
+
+  /* feb query */
+@media only screen and (max-width: 600px) {
+    body section:nth-child(2){
+        position: relative;
+        height: 100vh;
+        width: 300px;
+        background-color: #FBFBFB;
+    } 
+
+    #root section:nth-child(2) .dayCards{
+        left: 3px;
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3px;
+    }
+
+    #root section:nth-child(2) .dayCards .dayCard{
+        height: auto;
+        width: 50px;
+        flex-basis: calc(14% - 3px);
+        /* flex-shrink: 1; */
+    }
+
+    #root section:nth-child(2) .dayCards .dayCard time{
+        font-size: 10px;
+    }
+}
+
+/* march query */
+@media only screen and (max-width: 600px) {
+    body section:nth-child(3){
+        position: relative;
+        height: 100vh;
+        width: 300px;
+        background-color: #FBFBFB;
+    } 
+
+    #root section:nth-child(3) .dayCards{
+        left: 3px;
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3px;
+    }
+
+    #root section:nth-child(3) .dayCards .dayCard{
+        height: auto;
+        width: 50px;
+        flex-basis: calc(14% - 3px);
+        /* flex-shrink: 1; */
+    }
+
+    #root section:nth-child(3) .dayCards .dayCard time{
+        font-size: 10px;
+    }
+}
+
+/* apr query */
+@media only screen and (max-width: 600px) {
+    body section:nth-child(4){
+        position: relative;
+        height: 100vh;
+        width: 300px;
+        background-color: #FBFBFB;
+    } 
+
+    #root section:nth-child(4) .dayCards{
+        left: 3px;
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3px;
+    }
+
+    #root section:nth-child(4) .dayCards .dayCard{
+        height: auto;
+        width: 50px;
+        flex-basis: calc(14% - 3px);
+        /* flex-shrink: 1; */
+    }
+
+    #root section:nth-child(4) .dayCards .dayCard time{
+        font-size: 10px;
+    }
+}
+
+/* may query */
+@media only screen and (max-width: 600px) {
+    body section:nth-child(5){
+        position: relative;
+        height: 100vh;
+        width: 300px;
+        background-color: #FBFBFB;
+    } 
+
+    #root section:nth-child(5) .dayCards{
+        left: 3px;
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3px;
+    }
+
+    #root section:nth-child(5) .dayCards .dayCard{
+        height: auto;
+        width: 50px;
+        flex-basis: calc(14% - 3px);
+        /* flex-shrink: 1; */
+    }
+
+    #root section:nth-child(5) .dayCards .dayCard time{
+        font-size: 10px;
+    }
+}
+
+/* jun query */
+@media only screen and (max-width: 600px) {
+    body section:nth-child(6){
+        position: relative;
+        height: 100vh;
+        width: 300px;
+        background-color: #FBFBFB;
+    }
+    
+    #root section:nth-child(6) .dayCards{
+        top: 70px;
+        transform: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    #root section:nth-child(6) .dayCards .dayCard{
+        height: 90px;
+        /* width: 75px; */
+        flex-basis: 80px;
+        flex-grow: 0;
+        /* flex-shrink: 1; */
+    }
+
+    #root section:nth-child(6) .dayCards{
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3px;
+    }
+
+    #root section:nth-child(6) .dayCards .dayCard{
+        height: auto;
+        width: auto;
+        flex-basis: 30px;
+        /* flex-shrink: 1; */
+    }
+
+    #root section:nth-child(6) .dayCards .dayCard:nth-child(7n){
+        flex-basis: 50px;
+        /* flex-basis: 370px; */
+        flex-grow: 1;
+        /* height: 120px; */
+        /* flex-shrink: 2; */
+    }
+
+    #root section:nth-child(6) .dayCards .dayCard time{
+        font-size: 10px;
+    }
+}
+
 
