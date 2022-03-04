@@ -489,6 +489,9 @@ body section header{
     grid-template-rows: repeat(5, 150px);
     grid-gap: 10px;
     justify-content: space-around;
+
+    width: 760px;
+    left: calc(50% - 380px);
     /* gap: 4px 10px; */
 }
 
@@ -521,7 +524,11 @@ body section header{
 }
 /* Endregion: 11.: grid nov grid 7 in a row longer weekends*/
 
-#root section:nth-child(12) .dayCard{
+#root section:nth-child(12) .dayCards{
+    display: inline-block;
+}
+
+#root section:nth-child(12) .dayCards .dayCard{
     margin: 5px;
 }
 
