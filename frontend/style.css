@@ -58,7 +58,7 @@ body section header{
     gap: 5px;
 }
 
-#root section .dayCard{
+#root section  .dayCards .dayCard{
     height: 150px;
     width: 100px;
     /* height: 135px;
@@ -255,7 +255,6 @@ body section header{
 
 #root section:nth-child(5) .dayCards .dayCard{
     height: calc((100vh - 60px) * 0.15);
-    /* width: 75px; */
     flex-basis: calc(13%);
     flex-grow: 1;
     /* flex-shrink: 1; */
@@ -339,7 +338,7 @@ body section header{
     /* top: 80px;
     left:0; */
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px;
     grid-gap: 10px;
     justify-content: space-around;
     /* gap: 4px 10px; */
@@ -358,42 +357,169 @@ body section header{
 }
 /* Endregion: 7.: july grid 7 in a row */
 
-/* Region: 7.: july grid 7 in a row longer weekends*/
-#root section:nth-child(7) .dayCards{
+/* Region: 8.: grid aug grid 7 in a row longer weekends*/
+#root section:nth-child(8) .dayCards{
     /* top: 80px;
     left:0; */
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px 100px 130px 100px;
+    grid-template-columns: repeat(7, 40px);
+    /* grid-template-rows: repeat(5, 100px); */
     grid-gap: 10px;
     justify-content: space-around;
     /* gap: 4px 10px; */
 }
 
-#root section:nth-child(7) .dayCards .dayCard{
-    /* height: 90px;
-    width: 60px; */
+#root section:nth-child(8) .dayCards .dayCard{
+    height: 75px;
+    width: 50px;
 }
 
-#root section:nth-child(7) .dayCards .dayCard:nth-child(7n+6) {
+#root section:nth-child(8) .dayCards .dayCard:nth-child(7n+6) {
     /* grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2; */
   }
-  #root section:nth-child(7) .dayCards .dayCard:nth-child(7n) {
-    grid-column-start: 6;
+  #root section:nth-child(8) .dayCards .dayCard:nth-child(7n) {
+    /* grid-column-start: 6;
     grid-column-end: 7;
     grid-row-start: n;
-    grid-row-end: n;
+    grid-row-end: n; */
   }
 
-#root section:nth-child(7) .dayCards .dayCard time:nth-child(3){
+  #root section:nth-child(8) .dayCards .dayCard time{
+    font-size: 10px;
+}
+#root section:nth-child(8) .dayCards .dayCard time:nth-child(3){
     /* delete earlier positioning */
     line-height: 0;
-    padding-top: 25px;
-    font-size: 25px;
+    padding-top: 10px;
+    font-size: 20px;
 }
-/* Endregion: 7.: july grid 7 in a row longer weekends*/
+/* Endregion: 8.: grid aug grid 8 in a row longer weekends*/
+
+/* Region: 9.: grid sept grid 7 in a row longer weekends*/
+#root section:nth-child(9) .dayCards{
+    /* top: 80px;
+    left:0; */
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 10px;
+    justify-content: space-around;
+    /* gap: 4px 10px; */
+}
+
+#root section:nth-child(9) .dayCards .dayCard{
+    height: 90px;
+    width: 60px;
+}
+
+#root section:nth-child(9) .dayCards .dayCard:nth-child(7n+6) {
+    /* grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+  }
+  #root section:nth-child(9) .dayCards .dayCard:nth-child(7n) {
+    /* grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: n;
+    grid-row-end: n; */
+  }
+
+  #root section:nth-child(9) .dayCards .dayCard time{
+    font-size: 10px;
+}
+#root section:nth-child(9) .dayCards .dayCard time:nth-child(3){
+    /* delete earlier positioning */
+    line-height: 0;
+    padding-top: 10px;
+    font-size: 20px;
+}
+/* Endregion: 9.: grid sept grid 7 in a row longer weekends*/
+
+/* Region: 10.: grid oct grid 7 in a row longer weekends*/
+#root section:nth-child(10) .dayCards{
+    /* top: 80px;
+    left:0; */
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 200px 200px;
+    /* grid-template-rows: repeat(5, 100px); */
+    grid-gap: 10px;
+    justify-content: space-around;
+    /* gap: 4px 10px; */
+}
+
+#root section:nth-child(10) .dayCards .dayCard{
+    height: 120px;
+    width: 80px;
+}
+
+#root section:nth-child(10) .dayCards .dayCard:nth-child(7n+6) {
+    width: 200px;
+    /* grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+  }
+  #root section:nth-child(10) .dayCards .dayCard:nth-child(7n) {
+    width: 200px;
+    /* grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: n;
+    grid-row-end: n; */
+  }
+
+  #root section:nth-child(10) .dayCards .dayCard time{
+    font-size: 10px;
+}
+#root section:nth-child(10) .dayCards .dayCard time:nth-child(3){
+    /* delete earlier positioning */
+    line-height: 0;
+    padding-top: 10px;
+    font-size: 20px;
+}
+/* Endregion: 10.: grid oct grid 7 in a row longer weekends*/
+
+/* Region: 11.: grid nov grid 7 in a row longer weekends*/
+#root section:nth-child(11) .dayCards{
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: repeat(5, 150px);
+    grid-gap: 10px;
+    justify-content: space-around;
+    /* gap: 4px 10px; */
+}
+
+#root section:nth-child(11) .dayCards .dayCard{
+    /* height: 150px;
+    width: 100px; */
+}
+
+#root section:nth-child(11) .dayCards .dayCard:nth-child(7n+6) {
+    /* grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+  }
+  #root section:nth-child(11) .dayCards .dayCard:nth-child(7n) {
+    /* grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: n;
+    grid-row-end: n; */
+  }
+
+  #root section:nth-child(11) .dayCards .dayCard time{
+    /* font-size: 10px; */
+}
+#root section:nth-child(11) .dayCards .dayCard time:nth-child(3){
+    /* delete earlier positioning */
+    /* line-height: 0;
+    padding-top: 10px;
+    font-size: 20px; */
+}
+/* Endregion: 11.: grid nov grid 7 in a row longer weekends*/
 
 #root section:nth-child(12) .dayCard{
     margin: 5px;
