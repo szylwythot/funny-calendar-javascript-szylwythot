@@ -319,29 +319,13 @@ body section header{
 }
 /* Endregion: 8.: grid aug grid 8 in a row longer weekends*/
 
-/* Region: 9.: grid sept grid 7 in a row longer weekends*/
+/* Region: 9.: grid sept flex 7 in a row longer weekends*/
 #root section:nth-child(9) .dayCards{
-    display: grid;
-    grid-template-columns: repeat(7, 40px);
-    grid-template-rows: repeat(5, 100px);
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
-
-#root section:nth-child(9) .dayCards .dayCard{
-    height: 90px;
-    width: 60px;
-}
-
-  #root section:nth-child(9) .dayCards .dayCard time{
-    font-size: 10px;
-}
-#root section:nth-child(9) .dayCards .dayCard time:nth-child(3){
-    line-height: 0;
-    padding-top: 10px;
-    font-size: 20px;
-}
-/* Endregion: 9.: grid sept grid 7 in a row longer weekends*/
+/* Endregion: 9.: flex sept grid 7 in a row longer weekends*/
 
 /* Region: 10.: grid oct grid 7 in a row longer weekends*/
 #root section:nth-child(10) .dayCards{
@@ -717,9 +701,8 @@ body section header{
 /* sept query */
 @media only screen and (max-width: 604px) {
     #root section:nth-child(9) .dayCards{
-        display: grid;
         width: 300px;
-        grid-gap: 3px;
+        gap: 5px;
         justify-content: space-around;
     }
 
