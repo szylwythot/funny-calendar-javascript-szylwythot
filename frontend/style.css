@@ -38,18 +38,6 @@ body section header{
     font-size: 15px;
 }
 
-/* #root section:nth-child(4n+2) header{
-    background-color:  #F1D195;
-}
-
-#root section:nth-child(4n+3) header{
-    background-color: #C86D74;
-}
-
-#root section:nth-child(4n) header{
-    background-color: #EED352;
-} */
-
 #root section div.dayCards{
     position: absolute;
     top: 85px;
@@ -61,11 +49,6 @@ body section header{
 #root section  .dayCards .dayCard{
     height: 150px;
     width: 100px;
-    /* height: 135px;
-    width: 90px; */
-    /* height: 108px;
-    width: 72px; */
-    /* try daycards width 584 px  */
 
     display: flex;
     flex-direction: column;
@@ -121,8 +104,6 @@ body section header{
 
 /* Region: First: january 7 in a row */
 #root section:nth-child(1) .dayCards{
-    /* top: 80px;
-    left:0; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -137,7 +118,6 @@ body section header{
 }
 
 #root section:nth-child(1) .dayCards .dayCard time:nth-child(3){
-    /* delete earlier positioning */
     line-height: 0;
     padding-top: 25px;
     font-size: 25px;
@@ -183,7 +163,6 @@ body section header{
     font-size: 10px;
     width: 20%;
     align-self: flex-start;
-    /* max-width: 50px; */
 }
 
 #root section:nth-child(3) .dayCards .dayCard time:nth-child(3){
@@ -202,7 +181,6 @@ body section header{
     height: 60;
 }
 #root section:nth-child(4) .dayCards{
-    /* width: 800px; */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -210,30 +188,22 @@ body section header{
 
 #root section:nth-child(4) .dayCards .dayCard{
     height: calc((100vh - 60px) * 0.15);
-    /* width: 75px; */
     flex-basis: calc(13%);
     flex-grow: 0;
-    /* flex-shrink: 1; */
 }
 
 #root section:nth-child(4) .dayCards .dayCard:nth-child(7n){
     flex-grow: 1;
-    /* height: 120px; */
-    /* flex-shrink: 2; */
 }
 
 #root section:nth-child(4) .dayCards .dayCard:nth-child(7n-1){
     flex-grow: 1;
-    /* height: 120px; */
-    /* flex-shrink: 2; */
 }
 
 #root section:nth-child(4) .dayCards .dayCard time:nth-child(3){
     flex-grow: 1;
     flex-basis: 66%;
     font-size: 150%;
-    /* line-height: 0;
-    padding-bottom: 10px; */
 
     line-height: normal;
     padding-top: 0;
@@ -246,7 +216,6 @@ body section header{
     height: 60;
 }
 #root section:nth-child(5) .dayCards{
-    /* width: 800px; */
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -257,27 +226,20 @@ body section header{
     height: calc((100vh - 60px) * 0.15);
     flex-basis: calc(13%);
     flex-grow: 1;
-    /* flex-shrink: 1; */
 }
 
 #root section:nth-child(5) .dayCards .dayCard:nth-child(7n){
     flex-grow: 0;
-    /* height: 120px; */
-    /* flex-shrink: 2; */
 }
 
 #root section:nth-child(5) .dayCards .dayCard:nth-child(7n-1){
     flex-grow: 0;
-    /* height: 120px; */
-    /* flex-shrink: 2; */
 }
 
 #root section:nth-child(5) .dayCards .dayCard time:nth-child(3){
     flex-grow: 1;
     flex-basis: 66%;
     font-size: 150%;
-    /* line-height: 0;
-    padding-bottom: 10px; */
 
     line-height: normal;
     padding-top: 0;
@@ -300,33 +262,19 @@ body section header{
 
 #root section:nth-child(6) .dayCards .dayCard{
     height: 90px;
-    /* width: 75px; */
     flex-basis: 80px;
     flex-grow: 0;
-    /* flex-shrink: 1; */
 }
 
 #root section:nth-child(6) .dayCards .dayCard:nth-child(7n){
     flex-basis: 180px;
-    /* flex-basis: 370px; */
     flex-grow: 1;
-    /* height: 120px; */
-    /* flex-shrink: 2; */
-}
-
-#root section:nth-child(6) .dayCards .dayCard:nth-child(7n-1){
-    /* flex-basis: 200px; */
-    /* flex-grow: 1; */
-    /* height: 120px; */
-    /* flex-shrink: 2; */
 }
 
 #root section:nth-child(6) .dayCards .dayCard time:nth-child(3){
     flex-grow: 1;
     flex-basis: 66%;
     font-size: 150%;
-    /* line-height: 0;
-    padding-bottom: 10px; */
 
     line-height: normal;
     padding-top: 0;
@@ -335,22 +283,13 @@ body section header{
 
 /* Region: 7.: july grid 7 in a row */
 #root section:nth-child(7) .dayCards{
-    /* top: 80px;
-    left:0; */
     display: grid;
     grid-template-columns: 80px 80px 80px 80px 80px 80px 80px;
     grid-gap: 10px;
     justify-content: space-around;
-    /* gap: 4px 10px; */
-}
-
-#root section:nth-child(7) .dayCards .dayCard{
-    /* height: 90px;
-    width: 60px; */
 }
 
 #root section:nth-child(7) .dayCards .dayCard time:nth-child(3){
-    /* delete earlier positioning */
     line-height: 0;
     padding-top: 25px;
     font-size: 25px;
@@ -359,14 +298,10 @@ body section header{
 
 /* Region: 8.: grid aug grid 7 in a row longer weekends*/
 #root section:nth-child(8) .dayCards{
-    /* top: 80px;
-    left:0; */
     display: grid;
     grid-template-columns: repeat(7, 40px);
-    /* grid-template-rows: repeat(5, 100px); */
     grid-gap: 10px;
     justify-content: space-around;
-    /* gap: 4px 10px; */
 }
 
 #root section:nth-child(8) .dayCards .dayCard{
@@ -374,24 +309,10 @@ body section header{
     width: 50px;
 }
 
-#root section:nth-child(8) .dayCards .dayCard:nth-child(7n+6) {
-    /* grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2; */
-  }
-  #root section:nth-child(8) .dayCards .dayCard:nth-child(7n) {
-    /* grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: n;
-    grid-row-end: n; */
-  }
-
   #root section:nth-child(8) .dayCards .dayCard time{
     font-size: 10px;
 }
 #root section:nth-child(8) .dayCards .dayCard time:nth-child(3){
-    /* delete earlier positioning */
     line-height: 0;
     padding-top: 10px;
     font-size: 20px;
@@ -400,14 +321,11 @@ body section header{
 
 /* Region: 9.: grid sept grid 7 in a row longer weekends*/
 #root section:nth-child(9) .dayCards{
-    /* top: 80px;
-    left:0; */
     display: grid;
     grid-template-columns: repeat(7, 40px);
     grid-template-rows: repeat(5, 100px);
     grid-gap: 10px;
     justify-content: space-around;
-    /* gap: 4px 10px; */
 }
 
 #root section:nth-child(9) .dayCards .dayCard{
@@ -415,24 +333,10 @@ body section header{
     width: 60px;
 }
 
-#root section:nth-child(9) .dayCards .dayCard:nth-child(7n+6) {
-    /* grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2; */
-  }
-  #root section:nth-child(9) .dayCards .dayCard:nth-child(7n) {
-    /* grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: n;
-    grid-row-end: n; */
-  }
-
   #root section:nth-child(9) .dayCards .dayCard time{
     font-size: 10px;
 }
 #root section:nth-child(9) .dayCards .dayCard time:nth-child(3){
-    /* delete earlier positioning */
     line-height: 0;
     padding-top: 10px;
     font-size: 20px;
@@ -441,14 +345,10 @@ body section header{
 
 /* Region: 10.: grid oct grid 7 in a row longer weekends*/
 #root section:nth-child(10) .dayCards{
-    /* top: 80px;
-    left:0; */
     display: grid;
     grid-template-columns: 80px 80px 80px 80px 80px 200px 200px;
-    /* grid-template-rows: repeat(5, 100px); */
     grid-gap: 10px;
     justify-content: space-around;
-    /* gap: 4px 10px; */
 }
 
 #root section:nth-child(10) .dayCards .dayCard{
@@ -458,24 +358,15 @@ body section header{
 
 #root section:nth-child(10) .dayCards .dayCard:nth-child(7n+6) {
     width: 200px;
-    /* grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2; */
   }
   #root section:nth-child(10) .dayCards .dayCard:nth-child(7n) {
     width: 200px;
-    /* grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: n;
-    grid-row-end: n; */
   }
 
   #root section:nth-child(10) .dayCards .dayCard time{
     font-size: 10px;
 }
 #root section:nth-child(10) .dayCards .dayCard time:nth-child(3){
-    /* delete earlier positioning */
     line-height: 0;
     padding-top: 10px;
     font-size: 20px;
@@ -492,41 +383,14 @@ body section header{
 
     width: 760px;
     left: calc(50% - 380px);
-    /* gap: 4px 10px; */
-}
-
-#root section:nth-child(11) .dayCards .dayCard{
-    /* height: 150px;
-    width: 100px; */
-}
-
-#root section:nth-child(11) .dayCards .dayCard:nth-child(7n+6) {
-    /* grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2; */
-  }
-  #root section:nth-child(11) .dayCards .dayCard:nth-child(7n) {
-    /* grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: n;
-    grid-row-end: n; */
-  }
-
-  #root section:nth-child(11) .dayCards .dayCard time{
-    /* font-size: 10px; */
-}
-#root section:nth-child(11) .dayCards .dayCard time:nth-child(3){
-    /* delete earlier positioning */
-    /* line-height: 0;
-    padding-top: 10px;
-    font-size: 20px; */
 }
 /* Endregion: 11.: grid nov grid 7 in a row longer weekends*/
 
+/* region dec in inline block */
 #root section:nth-child(12) .dayCards{
     display: inline-block;
 }
+/* Endregion dec in inline block */
 
 #root section:nth-child(12) .dayCards .dayCard{
     margin: 5px;
@@ -535,6 +399,7 @@ body section header{
 #root section .dayCard.clicked{
     animation: 1.2s ease-in-out flipCard;
 }
+
 
 @keyframes flipCard {
   0% {
@@ -555,6 +420,11 @@ body section header{
 
 /* general query */
 @media only screen and (max-width: 600px) {
+    body{
+        width: 300px;
+        height: 100vh;
+    }
+
     body section header{
         position: absolute;
         top:0;
@@ -564,7 +434,6 @@ body section header{
         background-color: #F1B99B;
         color: #ffffff;
         font-weight: 700;
-        /* justify-content: center; */
     }
     
     #root section header h1{
@@ -585,10 +454,11 @@ body section header{
     #root section .dayCards{
         display: flex;
         top: 65px;
+        width: 300px;
     }
 }
 /* january query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 598px) {
     body section:nth-child(1){
         position: relative;
         height: 100vh;
@@ -609,7 +479,6 @@ body section header{
         height: auto;
         width: 50px;
         flex-basis: calc(14% - 3px);
-        /* flex-shrink: 1; */
     }
 
     #root section:nth-child(1) .dayCards .dayCard time{
@@ -624,7 +493,7 @@ body section header{
   }
 
   /* feb query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
     body section:nth-child(2){
         position: relative;
         height: 100vh;
@@ -645,7 +514,6 @@ body section header{
         height: auto;
         width: 50px;
         flex-basis: calc(14% - 3px);
-        /* flex-shrink: 1; */
     }
 
     #root section:nth-child(2) .dayCards .dayCard time{
@@ -654,7 +522,7 @@ body section header{
 }
 
 /* march query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 610px) {
     body section:nth-child(3){
         position: relative;
         height: 100vh;
@@ -675,7 +543,6 @@ body section header{
         height: auto;
         width: 50px;
         flex-basis: calc(14% - 3px);
-        /* flex-shrink: 1; */
     }
 
     #root section:nth-child(3) .dayCards .dayCard time{
@@ -684,7 +551,7 @@ body section header{
 }
 
 /* apr query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 608px) {
     body section:nth-child(4){
         position: relative;
         height: 100vh;
@@ -705,7 +572,6 @@ body section header{
         height: auto;
         width: 50px;
         flex-basis: calc(14% - 3px);
-        /* flex-shrink: 1; */
     }
 
     #root section:nth-child(4) .dayCards .dayCard time{
@@ -714,7 +580,7 @@ body section header{
 }
 
 /* may query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 608px) {
     body section:nth-child(5){
         position: relative;
         height: 100vh;
@@ -735,7 +601,6 @@ body section header{
         height: auto;
         width: 50px;
         flex-basis: calc(14% - 3px);
-        /* flex-shrink: 1; */
     }
 
     #root section:nth-child(5) .dayCards .dayCard time{
@@ -744,7 +609,7 @@ body section header{
 }
 
 /* jun query */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 607px) {
     body section:nth-child(6){
         position: relative;
         height: 100vh;
@@ -762,10 +627,8 @@ body section header{
     
     #root section:nth-child(6) .dayCards .dayCard{
         height: 90px;
-        /* width: 75px; */
         flex-basis: 80px;
         flex-grow: 0;
-        /* flex-shrink: 1; */
     }
 
     #root section:nth-child(6) .dayCards{
@@ -780,20 +643,184 @@ body section header{
         height: auto;
         width: auto;
         flex-basis: 30px;
-        /* flex-shrink: 1; */
     }
 
     #root section:nth-child(6) .dayCards .dayCard:nth-child(7n){
         flex-basis: 50px;
-        /* flex-basis: 370px; */
         flex-grow: 1;
-        /* height: 120px; */
-        /* flex-shrink: 2; */
     }
 
     #root section:nth-child(6) .dayCards .dayCard time{
         font-size: 10px;
     }
 }
+
+/* july query */
+@media only screen and (max-width: 606px) {
+    #root section:nth-child(7) .dayCards{
+        display: grid;
+        width: 300px;
+        grid-template-columns: 30px 30px 30px 30px 30px 30px 30px;
+        grid-gap: 3px;
+        justify-content: space-around;
+    }
+
+    #root section:nth-child(7) .dayCards .dayCard{
+        width: 30px;
+        height: 45px;
+    }
+
+    #root section:nth-child(7) .dayCards .dayCard time{
+        font-size: 8px;
+    }
+
+    #root section:nth-child(7) .dayCards .dayCard time:nth-child(3){
+        line-height: 0;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}
+
+/* aug query */
+@media only screen and (max-width: 605px) {
+    #root section:nth-child(8) .dayCards{
+        display: grid;
+        width: 300px;
+        grid-gap: 3px;
+        justify-content: space-around;
+    }
+
+    #root section:nth-child(8) .dayCards .dayCard{
+        width: 30px;
+        height: 45px;
+    }
+
+    #root section:nth-child(10) .dayCards .dayCard:nth-child(7n+6) {
+        width: 50px;
+    }
+
+    #root section:nth-child(10) .dayCards .dayCard:nth-child(7n) {
+        width: 50px;
+    }
+
+    #root section:nth-child(8) .dayCards .dayCard time{
+        font-size: 8px;
+    }
+
+    #root section:nth-child(8) .dayCards .dayCard time:nth-child(3){
+        line-height: 0;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}
+
+/* sept query */
+@media only screen and (max-width: 604px) {
+    #root section:nth-child(9) .dayCards{
+        display: grid;
+        width: 300px;
+        grid-gap: 3px;
+        justify-content: space-around;
+    }
+
+    #root section:nth-child(9) .dayCards .dayCard{
+        width: 30px;
+        height: 45px;
+    }
+
+    #root section:nth-child(9) .dayCards .dayCard time{
+        font-size: 8px;
+    }
+
+    #root section:nth-child(9) .dayCards .dayCard time:nth-child(3){
+        line-height: 0;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}
+
+/* OCT query */
+@media only screen and (max-width: 603px) {
+    #root section:nth-child(10) .dayCards{
+        display: grid;
+        width: 300px;
+        grid-gap: 3px;
+        justify-content: space-around;
+        grid-template-columns: 30px 30px 30px 30px 30px 50px 50px;
+    }
+
+    #root section:nth-child(10) .dayCards .dayCard{
+        width: 30px;
+        height: 45px;
+    }
+
+    #root section:nth-child(10) .dayCards .dayCard time{
+        font-size: 8px;
+    }
+
+    #root section:nth-child(10) .dayCards .dayCard time:nth-child(3){
+        line-height: 0;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}
+
+/* nov query */
+@media only screen and (max-width: 602px) {
+    #root section:nth-child(11) .dayCards{
+        display: grid;
+        width: 300px;
+        top: 65px;
+        left: 3px;
+        grid-template-rows: repeat(7, 30px);
+        grid-template-rows: repeat(5, 50px);
+        grid-gap: 3px;
+        justify-content: space-around;
+    }
+
+    #root section:nth-child(11) .dayCards .dayCard{
+        width: 30px;
+        height: 45px;
+    }
+
+    #root section:nth-child(11) .dayCards .dayCard time{
+        font-size: 8px;
+    }
+
+    #root section:nth-child(11) .dayCards .dayCard time:nth-child(3){
+        line-height: 0;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}
+
+/* dec query */
+@media only screen and (max-width: 601px) {
+    #root section:nth-child(12) .dayCards{
+
+        width: 300px;
+        top: 65px;
+        left: 3px;
+
+        justify-content: space-around;
+    }
+
+    #root section:nth-child(12) .dayCards .dayCard{
+        width: 30px;
+        height: 45px;
+    }
+
+    #root section:nth-child(12) .dayCards .dayCard time{
+        font-size: 8px;
+    }
+
+    #root section:nth-child(12) .dayCards .dayCard time:nth-child(3){
+        line-height: 0;
+        padding-top: 10px;
+        font-size: 15px;
+    }
+}
+
+
 
 
